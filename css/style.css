@@ -1,0 +1,107 @@
+@font-face {
+    font-family: "Calibri";
+    src: url("/fonts/Calibri_Regular.ttf") format("ttf"),
+}
+
+@font-face {
+    font-family: "Calibri_Bold_Italic";
+    src: url("/fonts/Calibri_Bold_Italic.ttf") format("ttf"),
+}
+
+.container {
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+body {
+    font-family: "Calibri";
+}
+
+.logo {
+    width: 8%;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-bottom: 20px;
+    position: relative;
+    z-index: 999;
+}
+
+header .menu ul {
+    display: flex;
+    list-style: none;
+}
+
+header .menu ul li {
+    padding-left: 20px;
+}
+
+header .menu ul li a {
+    text-decoration: none;
+    color: white;
+}
+
+.banner {
+    background-color: #EB5A53;
+    margin-top: -150px;
+    padding-top: 250px;
+    padding-bottom: 200px;
+    clip-path: polygon(50% 0%, 100% 0, 100% 35%, 100% 85%, 50% 100%, 0 85%, 0% 35%, 0 0);
+}
+
+.banner a {
+    background-color: white;
+    color: #EB5A53;
+    padding: 10px 20px 10px 20px;
+    text-decoration: none;
+    border-radius: 25px;
+    font-size: 1.4rem;
+}
+
+.banner-elements {
+    display: flex;
+    justify-content: space-between;
+    align-items: top;
+    width: 80%;
+}
+
+.banner-elements img {
+    width: 50%;
+}
+
+.banner-elements div h1 {
+    color: white;
+    font-size: 5rem;
+    margin-top: -10px;
+}
+
+.banner-elements div h2 {
+    color: white;
+    font-size: 3rem;
+    margin-top: -50px;
+    width: 70%;
+    font-weight: 500;
+}
+
+.presentation {
+    display: flex;
+    align-items: top;
+    justify-content: space-between;
+    width: 70%;
+    margin: 0 auto;
+}
+
+.presentation .slogan {
+    text-align: right;
+    padding-right: 20px;
+}
+
+footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 20px;
+}
