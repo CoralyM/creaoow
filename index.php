@@ -25,7 +25,7 @@
     </div>
     <div>
         <p>
-            Créaoow, est  une agence de communication spécialisée en design et de développement web.Nos designers issus de formations effervescentes, de parcours professionnels divergents et d’une addiction commune pour l’image, vous accompagnent dans la création de stratégies, de design et de développement web.
+            Créaoow, est     une agence de communication spécialisée en design et de développement web.Nos designers issus de formations effervescentes, de parcours professionnels divergents et d’une addiction commune pour l’image, vous accompagnent dans la création de stratégies, de design et de développement web.
         </p>
         <p>
             Indications : L'agence Créaoow est recommandée pour tout projet de création de logo, d’identité visuelle, de charte graphique et de site web.
