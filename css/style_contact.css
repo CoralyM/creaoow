@@ -1,0 +1,124 @@
+.contact_banner {
+    background-color: #91CF8B;
+    margin-top: -150px;
+    padding-top: 250px;
+    padding-bottom: 300px;
+    clip-path: polygon(50% 0%, 100% 0, 100% 35%, 100% 85%, 50% 100%, 0 85%, 0% 35%, 0 0);
+    overflow: hidden;
+}
+
+.contact_banner_elements {
+    display: flex;
+    width: 80%;
+    color: white;
+    font-size: 1.1rem;
+}
+
+.contact_banner_elements img {
+    width: 50%;
+    margin: 0 auto;
+}
+
+.contact_banner_img {
+    display: flex;
+    flex-direction: column;
+}
+
+.contact_banner_img svg {
+    margin: 0 auto;
+    padding-top: 20px;
+}
+
+.contact_text {
+    clip-path: polygon(50% 0%, 100% 0, 100% 35%, 100% 80%, 36% 80%, 24% 100%, 14% 80%, 0 80%, 0% 35%, 0 0);
+    background-color: #EB5A53;
+    color: white;
+    height: 400px;
+    width: 40%;
+}
+
+.contact_text h3 {
+    font-size: 2rem;
+    text-align: center;
+}
+
+.contact_form {
+    background-image: url(../images/fenetre.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    padding: 38px 0 30px 0;
+    box-shadow: 5px 5px 15px 5px rgba(0, 0, 0, 0.06);
+    border-radius: 50px;
+    width: 79%;
+    margin-top: 100px;
+}
+
+.contact_elements {
+    display: flex;
+    flex-direction: row;
+    width: 80%;
+    margin: 0 auto;
+    padding-top: 100px;
+    padding-bottom: 100px;
+    align-items: center;
+    justify-content: center;
+}
+
+.contact_text div {
+    display: flex;
+    padding: 0 30px 0 30px;
+}
+
+.contact_text div img {
+    width: 40px;
+    height: 40px;
+    padding-right: 10px;
+}
+
+.contact_inputs {
+    padding-left: 50px;
+}
+
+.contact_inputs form {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+}
+
+.contact_inputs input {
+    background-color: rgba(243, 243, 243);
+    color: black;
+    border: none;
+    border-radius: 50px;
+    height: 50px;
+    padding-left: 40px;
+    width: 400px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.contact_inputs textarea {
+    background-color: rgba(243, 243, 243);
+    color: black;
+    border: none;
+    border-radius: 50px;
+    height: 150px;
+    padding-left: 40px;
+    width: 400px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.contact_inputs input[type=submit] {
+    width: 100px;
+    background-color: #EB5A53;
+    color: white;
+    padding-left: 0;
+    cursor: pointer;
+}
+
+.contact_inputs h3 {
+    font-size: 2rem;
+    text-align: center;
+}

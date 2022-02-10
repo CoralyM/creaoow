@@ -4,7 +4,7 @@
 
 <section class="banner">
     <div class='container banner-elements'>
-        <div>
+        <div id='txt_banner'>
             <svg xmlns="http://www.w3.org/2000/svg" width="103.445" height="18.805" viewBox="0 0 103.445 18.805">
                 <path id="Tracé_676" data-name="Tracé 676" d="M4750.45,1200.881l14.042-14.544,14.544,14.544,14.544-14.544,14.544,14.544,14.544-14.544,14.544,14.544,14.543-14.544" transform="translate(-4749.371 -1184.198)" fill="none" stroke="#fff" stroke-width="3"/>
             </svg>
@@ -12,11 +12,11 @@
             <h2>Une agence web à votre image !</h2>
             <a href=''> Réalisez votre projet </a>
         </div>
-        <img src='images/illustration_home.png'>
+        <img src='images/illustration_home.png' id='img_banner'>
     </div>
 </section>
 
-<section class='presentation container'>
+<section class='presentation container appear'>
     <div class='slogan'>
         <h3> Créaoow, l'agence web qui soigne les détails de votre projet ! </h3>
         <svg xmlns="http://www.w3.org/2000/svg" width="103.445" height="18.805" viewBox="0 0 103.445 18.805">
@@ -36,7 +36,7 @@
     </div>
 </section>
 
-<section class='valeurs'>
+<section class='valeurs appear'>
     <div>
         <img src='images/picto-disponibilité.png'>
         <h3> Disponibilité </h3>

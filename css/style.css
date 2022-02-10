@@ -8,6 +8,12 @@
     src: url("/fonts/Calibri_Bold_Italic.ttf") format("ttf"),
 }
 
+.appear {
+    opacity: 0;
+    position: relative;
+    top: 100px;
+}
+
 .container {
     max-width: 1400px;
     margin: 0 auto;
@@ -18,8 +24,21 @@ body {
 }
 
 .logo {
-    width: 8%;
+    width: 100px;
+    height: 110px;
+    background-image: url(../images/logo_anime.png);
+    background-size: cover;
+    background-repeat: no-repeat;
 }
+
+.logo_top {
+    background-position: top;
+}
+
+.logo_bottom {
+    background-position: bottom;
+}
+
 
 header {
     display: flex;
@@ -40,8 +59,44 @@ header .menu ul li {
 }
 
 header .menu ul li a {
-    text-decoration: none;
+    text-transform: uppercase;
     color: white;
+    text-decoration: none;
+    position: relative;
+    display: block;
+}
+
+header .menu ul li a:before,
+header .menu ul li a:after {
+    content: '';
+    border-bottom: solid 1px white;
+    position: absolute;
+    bottom: 0;
+    width: 0;
+}
+
+header .menu ul li a:before {
+    left: 0;
+}
+
+header .menu ul li a:after {
+    right: 0;
+}
+
+header .menu ul li a:hover:before,
+header .menu ul li a:hover:after {
+    width: 50%;
+}
+
+header .menu ul li a:before,
+header .menu ul li a:after {
+    -webkit-transition: all 0.2s ease;
+    transition: all 0.2s ease;
+}
+
+header .menu ul li a {
+    display: inline-block;
+    margin: 1em;
 }
 
 .banner {
@@ -50,6 +105,7 @@ header .menu ul li a {
     padding-top: 250px;
     padding-bottom: 200px;
     clip-path: polygon(50% 0%, 100% 0, 100% 35%, 100% 85%, 50% 100%, 0 85%, 0% 35%, 0 0);
+    overflow: hidden;
 }
 
 .banner a {
@@ -59,6 +115,16 @@ header .menu ul li a {
     text-decoration: none;
     border-radius: 25px;
     font-size: 1.4rem;
+}
+
+.banner a {
+    -webkit-transition: box-shadow 300ms ease-in-out, color 300ms ease-in-out;
+    transition: box-shadow 300ms ease-in-out, color 300ms ease-in-out;
+}
+
+.banner a:hover {
+    box-shadow: 0 0 40px 40px #e74c3c inset;
+    color: white;
 }
 
 .banner-elements {
@@ -140,7 +206,7 @@ header .menu ul li a {
 }
 
 .valeurs div:nth-child(2) {
-    background-color: #A6D9A1;
+    background-color: #91CF8B;
 }
 
 .valeurs div:nth-child(3) {
