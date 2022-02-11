@@ -10,9 +10,9 @@
             </svg>
             <h1> Créaoow </h1>
             <h2>Une agence web à votre image !</h2>
-            <a href=''> Réalisez votre projet </a>
+            <a href='contact.php'> Réalisez votre projet </a>
         </div>
-        <img src='images/illustration_home.png' id='img_banner'>
+        <img src='images/illustration_home.png' id='img_banner' loading='lazy'>
     </div>
 </section>
 
@@ -38,28 +38,28 @@
 
 <section class='valeurs appear'>
     <div>
-        <img src='images/picto-disponibilité.png'>
+        <img src='images/picto-disponibilité.png' loading='lazy'>
         <h3> Disponibilité </h3>
         <p> 
             La qualité de nos services dépend également de notre disponibilité. A la moindre question, il vous suffit de nous contacter par mail ou par téléphone pour obtenir des réponses !
         </p>
     </div>
     <div>
-        <img src='images/picto-passion.png'>
+        <img src='images/picto-passion.png' loading='lazy'>
         <h3> Passion </h3>
         <p>
             Notre équipe est passionnée par le monde du numérique et du design graphique. Nous mettons en commun nos connaissances et nos capacités pour vous offrir un projet qui vous ressemble, annonçant un nouveau chapitre pour votre entreprise.
         </p>
     </div>
     <div>
-        <img src='images/picto-confiance.png'>
+        <img src='images/picto-confiance.png' loading='lazy'>
         <h3> Confiance </h3>
         <p>
             Partenaires de vos projets, nous établissons une relation de confiance pour vous accompagner dans les réflexions, vous aider à prendre les bonnes décisions et avancer ensemble.
         </p>
     </div>
     <div>
-        <img src='images/picto-collaboration.png'>
+        <img src='images/picto-collaboration.png' loading='lazy'>
         <h3> Collaboration </h3>
         <p>
         Nous réalisons votre projet en étant à l’écoute de vos envies pour qu’il soit unique et authentique. Mais pas de panique ! Nous vous conseillons et vous aidons avec sagesse dans vos choix pour qu’ils correspondent aux tendances graphiques et numériques actuelles.

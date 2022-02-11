@@ -1,5 +1,7 @@
 <?php
     include 'partials/header.html';
+    $bdd = new PDO("mysql:host=localhost;dbname=creaoow", "root", "");
+    $bdd->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 ?>
 
 <section class='contact_banner'>
@@ -19,29 +21,38 @@
 </section>
 
 <section class='contact_form container'>
-    <div class='contact_elements'>
+    <div class='contact_elements appear'>
         <div class='contact_text'>
             <h3>Contactez-nous</h3>
             <div>
-                <img src='images/marqueur.png'>
+                <img src='images/marqueur.png' loading='lazy'>
                 <p>IUT de LENS - 16 Rue de l'Université, 62300 LENS</p>
             </div>
             <div>
-                <img src='images/mail.png'>
+                <img src='images/mail.png' loading='lazy'>
                 <p>creaoow.contact@gmail.com</p>
             </div>
-            <div>
-                <img src=''>
-                <img src=''>
+            <div class='contact_text_rs'>
+                <a href='https://www.instagram.com/creaoow/'><img src='images/instagram_blanc.png' loading='lazy'></a>
+                <a href='https://www.facebook.com/creaoow/'><img src='images/facebook_blanc.png' loading='lazy'></a>
             </div>
         </div>
-        <div class='contact_inputs'>
+        <div class='contact_inputs' id='contact'>
             <h3>Envoyez-nous un message</h3>
-            <form>
-                <input type='text' placeholder='Votre nom'/>
-                <input type='email' placeholder='Votre adresse e-mail'/>
-                <textarea placeholder='Votre message...'></textarea>
-                <input type='submit' value='Envoyer'/>
+            <form method='post' action='#contact'>
+                <input type='text' placeholder='Votre nom' name='nom' required/>
+                <input type='email' placeholder='Votre adresse e-mail' name='mail' required/>
+                <textarea placeholder='Votre message...' name='message' required></textarea>
+                <input type='submit' value='Envoyer' name='envoyer'/>
+
+                <?php
+                    if(isset($_POST['envoyer'])){
+
+                        $requete = $bdd->prepare("INSERT INTO contact(Nom, Mail, Message) VALUES(?, ?, ?)");
+                        $requete->execute(array($_POST['nom'], $_POST['mail'], $_POST['message']));
+                        echo '<p>Nous avons bien reçu votre message !</p>';
+                    }
+                ?>
             </form>
         </div>
     </div>

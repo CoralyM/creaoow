@@ -46,3 +46,33 @@ $(window).scroll(function(){
     duration: 1.5,
     delay: 1.5
   });
+
+  var burgerMenu = document.getElementById('burger-menu');
+var overlay = document.getElementById('menu');
+burgerMenu.addEventListener('click',function(){
+  this.classList.toggle("close");
+  overlay.classList.toggle("overlay");
+});
+
+gsap.from(".contact_banner_txt", {
+  scrollTrigger: ".contact_banner_txt", // start the animation when ".box" enters the viewport (once)
+  x: 1000
+});
+
+gsap.to(".contact_banner_txt", {
+  scrollTrigger: ".contact_banner_txt", // start the animation when ".box" enters the viewport (once)
+  x: this,
+  duration: 1.5,
+});
+
+gsap.from(".contact_banner_img", {
+  scrollTrigger: ".contact_banner_img", // start the animation when ".box" enters the viewport (once)
+  opacity: 0
+});
+
+gsap.to(".contact_banner_img", {
+  scrollTrigger: ".contact_banner_img", // start the animation when ".box" enters the viewport (once)
+  opacity: 1,
+  duration: 1.5,
+  delay: 1.5
+});

@@ -108,6 +108,9 @@
     width: 400px;
     margin-top: 10px;
     margin-bottom: 10px;
+    font-family: 'Calibri';
+    font-size: 0.9rem;
+    padding-top: 10px;
 }
 
 .contact_inputs input[type=submit] {
@@ -121,4 +124,207 @@
 .contact_inputs h3 {
     font-size: 2rem;
     text-align: center;
+}
+
+.contact_text_rs {
+    justify-content: center;
+    margin-top: 20px;
+}
+
+@media screen and (max-width: 640px) {
+    .contact_banner {
+        margin-top: -150px;
+        padding-top: 200px;
+        padding-bottom: 200px;
+    }
+
+    .contact_banner_elements {
+        flex-direction: column;
+        font-size: 1.1rem;
+    }
+
+    .contact_banner_elements img {
+        width: 80%;
+    }
+
+    .contact_banner_img {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .contact_banner_img svg {
+        padding-top: 40px;
+    }
+
+    .contact_banner_txt {
+        padding-top: 20px;
+    }
+
+    .contact_inputs {
+        padding-left: 0px;
+    }
+
+    .contact_form {
+        background-image: none;
+        padding: 38px 0 30px 0;
+        width: 79%;
+        margin-top: 0px;
+        box-shadow: none;
+    }
+
+    .contact_elements {
+        flex-direction: column;
+        width: 100%;
+        margin: 0 auto;
+        padding-top: 100px;
+        padding-bottom: 0px;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .contact_text {
+        clip-path: polygon(50% 0%, 100% 0, 100% 35%, 100% 80%, 36% 80%, 24% 100%, 14% 80%, 0 80%, 0% 35%, 0 0);
+        background-color: #EB5A53;
+        color: white;
+        height: 400px;
+        width: 100%;
+    }
+
+    .contact_inputs form {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .contact_inputs input {
+        background-color: rgba(243, 243, 243);
+        color: black;
+        border: none;
+        border-radius: 50px;
+        height: 50px;
+        padding-left: 40px;
+        width: 250px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+
+    .contact_inputs textarea {
+        background-color: rgba(243, 243, 243);
+        color: black;
+        border: none;
+        border-radius: 50px;
+        height: 150px;
+        padding-left: 40px;
+        width: 250px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+
+    .contact_inputs input[type=submit] {
+        margin: auto;
+    }
+
+    .contact_inputs h3 {
+        font-size: 1.5rem;
+        text-align: center;
+    }
+}
+
+@media screen and (min-width:640px) and (max-width:1100px) {
+    .contact_banner {
+        margin-top: -150px;
+        padding-top: 200px;
+        padding-bottom: 200px;
+    }
+
+    .contact_banner_elements {
+        flex-direction: column;
+        font-size: 1.1rem;
+    }
+
+    .contact_banner_elements img {
+        width: 60%;
+    }
+
+    .contact_banner_img {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .contact_banner_img svg {
+        padding-top: 40px;
+    }
+
+    .contact_banner_txt {
+        padding-top: 20px;
+    }
+
+    .contact_inputs {
+        padding-left: 0px;
+    }
+
+    .contact_form {
+        background-image: none;
+        padding: 38px 0 30px 0;
+        width: 79%;
+        margin-top: 0px;
+        box-shadow: none;
+    }
+
+    .contact_elements {
+        flex-direction: column;
+        width: 100%;
+        margin: 0 auto;
+        padding-top: 100px;
+        padding-bottom: 0px;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .contact_text {
+        clip-path: polygon(50% 0%, 100% 0, 100% 35%, 100% 80%, 36% 80%, 24% 100%, 14% 80%, 0 80%, 0% 35%, 0 0);
+        background-color: #EB5A53;
+        color: white;
+        height: 400px;
+        width: 80%;
+    }
+
+    .contact_inputs form {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .contact_inputs input {
+        background-color: rgba(243, 243, 243);
+        color: black;
+        border: none;
+        border-radius: 50px;
+        height: 50px;
+        padding-left: 40px;
+        width: 500px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+
+    .contact_inputs textarea {
+        background-color: rgba(243, 243, 243);
+        color: black;
+        border: none;
+        border-radius: 50px;
+        height: 150px;
+        padding-left: 40px;
+        width: 500px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+
+    .contact_inputs input[type=submit] {
+        margin: auto;
+    }
+
+    .contact_inputs h3 {
+        font-size: 1.5rem;
+        text-align: center;
+    }
 }
