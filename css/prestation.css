@@ -1,0 +1,444 @@
+.prestaContainer {
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+.prestaBanner {
+    background-color: #1F938A;
+    margin-top: -150px;
+    padding-top: 250px;
+    padding-bottom: 200px;
+    clip-path: polygon(50% 0%, 100% 0, 100% 35%, 100% 85%, 50% 100%, 0 85%, 0% 35%, 0 0);
+}
+
+.prestaBanner a {
+    background-color: white;
+    color: #1F938A;
+    padding: 10px 20px 10px 20px;
+    text-decoration: none;
+    border-radius: 25px;
+    font-size: 1.4rem;
+}
+
+.prestaBanner-elements {
+    display: flex;
+    justify-content: space-between;
+    align-items: top;
+    width: 80%;
+}
+
+.prestaBanner-elements img {
+    width: 55%;
+    height: 55%;
+}
+
+.prestaBanner-elements div {
+    width: 30%;
+    padding: 0px 50px 0px 50px;
+}
+
+.prestaBanner-elements div h2 {
+    color: white;
+    font-size: 1.25rem;
+    margin-top: -50px;
+    font-weight: 500;
+    margin-top: 30px;
+}
+
+/* Nos prestations */
+.prestation{
+    background-color: #A6D9A1;
+    margin-top: -250px;
+    padding-top: 350px;
+    padding-bottom:150px;
+    width: 100%;
+    color: white;
+}
+
+.titrePresta{
+    position:relative;
+    top: -20px;
+    left: 150px;
+    font-size: 2rem;
+    font-style: italic;
+}
+
+.prestaText{
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    text-align: -webkit-center;
+    text-align:-moz-center;
+    margin: 0 auto;
+}
+
+.prestation :nth-child(n){
+    width: 75%;
+}
+
+.prestaText div:nth-child(1) img{
+    width: 70%;
+}
+.prestaText div:nth-child(2) {
+    width: 110%;
+}
+.prestaText div:nth-child(2) img{
+    padding-bottom: 10px;
+}
+
+.prestaText div:nth-child(3) {
+    width: 100%;
+}
+.prestaText div:nth-child(3) img{
+    padding-bottom: 5px;
+}
+
+.prestaText div:nth-child(4) {
+    width: 85%;
+}
+
+.prestaText div:nth-child(5) {
+    width: 110%;
+}
+.prestaText div:nth-child(5) img{
+    padding-bottom: 10px;
+}
+
+.prestaText div h3{
+    text-transform: uppercase;
+}
+
+.prestaImg{
+    width: 60%;
+}
+/* Fin prestations */
+
+
+
+/* Méthodologie */ 
+
+.methodologie{
+    width: 45%;
+    margin: 0 auto;
+    padding-top: 75px;
+}
+
+.titreMetho{
+    position: relative;
+    left: -150px;
+    font-size: 3rem;
+    color: #1F938A;
+}
+
+.methoText{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+
+.methoText div{
+    margin: 0px 20px 0px 20px;
+}
+
+.methoText div h3 {
+    font-size: 2rem;
+    position: relative;
+    top: -135px;
+    left: 45px;
+}
+
+.methoText div p:nth-child(1){
+    font-size: 4.5rem;
+    font-weight: 800;
+    font-style: italic;
+    color: #1F938A;
+    opacity: 60%;
+}
+
+.methoText div p:last-of-type {
+    font-size: 1.5rem;
+    position: relative;
+    top: -100px;
+    color: #1F938A;
+    font-style: italic;
+    font-weight: 510;
+}
+
+.methoUpper{
+    position: relative;
+    top: -100px;
+}
+
+/* Fin méthodologie */
+
+/* Contact */
+
+.prestaContact{
+    background-color: #EB5A53;
+    padding: 300px 100px 0px 100px ; 
+    clip-path: polygon(0 10%, 100% 0, 100% 100%, 0% 100%);
+}
+
+.contactLogo{
+    position: relative;
+    right: -1200px;
+    top: -75px;
+    width: 9%;
+}
+
+.contactImg{
+    margin-left: 135px;
+}
+
+.contactContainer h3{
+    position: relative;
+    width: 47%;
+    margin: 0 auto;
+    top: -400px;
+    font-size: 2rem;
+    color: #EB5A53;
+    font-style: italic;
+    text-align:center;
+}
+
+.contactContainer button{
+    position: relative;
+    width: 25%;
+    height: 40px;
+    border-radius: 20px;
+    background-color: #EB5A53;
+    margin: 0 auto;
+    top: -350px;
+    left: 475px;
+    font-size: 1.25rem;
+    color: white;
+    font-weight: 500;
+    border: none;
+}
+.contactButtonImg{
+    width: 7%;
+}
+
+/* Fin contact */
+
+footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 20px;
+}
+
+
+@media screen and (min-width: 812px) and (max-width: 1201px) {
+    .prestaBanner-elements img{
+        width: 55%;
+        height: 55%;
+    }
+    
+    .methodologie{
+        width: 60%;
+    }
+    
+    .contactImg{
+       display: none;
+    }
+    
+    .contactLogo{
+        left: 90%;
+        top: -80%;
+    }
+    
+    .contactContainer h3{
+        color: white;
+        top: -200px;
+        left: 30px;
+    }
+    
+    .contactContainer button{
+        left: 40%;
+        top: -100px;
+        background-color: white;
+        color: #EB5A53;
+    }
+    
+    .contactButtonImg{
+        display: none;
+    }
+}
+
+@media screen and (min-width: 392px) and (max-width: 811px) {
+    
+    .prestaBanner-elements{
+       flex-direction: column;  
+    }
+    .prestaBanner-elements img {
+        width: 100%;
+    }
+    
+    .prestaBanner-elements div h2{
+        width: 300%;
+        position: relative;
+        top: 20px;
+    }
+    
+    .prestaSVG{
+        position: relative;
+        left: 100%;
+    }
+
+    .prestation{
+        margin-top: -200px;
+    }
+
+.methodologie{
+    width: 80%;
+}
+
+.methoText div:nth-child(n){
+            margin-top: -40px;
+        }    
+    
+.titreMetho{
+    left: -5%;
+}
+
+.prestaContact{
+    padding-top: 100px;
+}
+
+.contactContainer{
+    position: relative;
+    height: 500px;
+}
+.contactImg{
+    display: none;
+}
+
+.contactLogo{
+    left: 100%;
+    top: -5%;
+}
+
+.contactContainer h3{
+    color: white;
+    top: -0%;
+    width: 80%;
+}
+
+.contactContainer button{
+    left: 150px;
+    top: 50px;
+    width: 40%;
+    background-color: white;
+    color: #EB5A53;
+}
+    .contactButtonImg{
+        display: none;
+    }
+    
+}
+
+@media screen and (min-width: 392px) and (max-width: 631px) {
+    .prestaText{
+        flex-direction:column;
+    }
+    
+    .prestation div:nth-child(n){
+        padding: 25px 0px;
+        margin: 0 auto;
+    }
+    
+    .prestation div:nth-child(n){
+        width: 60%;
+    }
+}
+
+@media screen and (min-width: 0px) and (max-width: 391px) {
+
+    .prestaContainer {
+        max-width: 390px;
+    }
+        
+    .prestaBanner-elements{
+       flex-direction: column;  
+    }
+        
+    .prestaBanner-elements img {
+        width: 100%;
+    }
+        
+    .prestaBanner-elements div h2{
+            position: relative;
+            width: 275%;
+            left: -10%;
+            top: 5%;
+        }
+    .prestaSVG{
+            position: relative;
+            left: 50%;
+        }
+        
+        .prestation{
+            margin-top: -200px;
+        }
+        
+        .titrePresta{
+            left: 25%;
+        }
+        
+        .prestaText{
+            flex-direction:column;
+        }
+        
+        .prestation div:nth-child(n){
+            padding: 25px 0px;
+            margin: 0 auto;
+        }
+        
+        .prestation div:nth-child(1){
+            width: 80%;
+        }
+        
+        .titreMetho{
+            left: -50px;
+        }
+        
+        .methoText div:nth-child(n){
+            margin-top: -70px;
+        }
+
+
+        .methoUpper{
+            top: 0px;
+        }
+
+        .contactImg{
+            display: none;
+        }
+        
+        .contactLogo{
+            left: 140px;
+            top: -170px;
+            width: 50%;
+        }
+        
+        .contactContainer h3{
+            color: white;
+            width: 100%;
+            top: -80px;
+            text-align:left;
+        }
+        
+        .contactContainer button{
+            background-color: white;
+            left: 0px;
+            top: -30px;
+            width: 100%;
+            color: #EB5A53;
+        }
+        
+        .contactButtonImg{
+            display:none;
+        }
+} 
